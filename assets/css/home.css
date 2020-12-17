@@ -1,0 +1,86 @@
+body,html {
+    height: 100%;
+    margin: 0;
+    font-family: calibri;
+}
+nav{
+    background-color: #189AEC;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 20px;
+    top: 0;
+}
+.navbar ul li{
+    float: right;
+    margin-right: 30px; 
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.navbar ul li a:hover{
+    text-decoration: underline;
+}
+.navbar ul{
+    list-style: none;
+}
+.header {
+  background-image: url("../img/bgheader2.png");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header .title{
+    padding-top: 180px;
+    text-align: center;
+    color: white;
+    font-size: 6em;
+}
+.header .title-description{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    margin-top: 20px;
+    letter-spacing: 3.5px;
+}
+.place-btn-explore{
+    margin-top: 50px;
+    text-align: center;
+}
+.btn-explore{
+    border: none;
+    border-radius: 10px;
+    background: #189AEC;
+    color: white;
+    padding:20px;
+    cursor: pointer;
+}
+
+.services{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.services .title{
+    font-size: 2.5em;
+    padding-bottom: 50px;
+}
+.services .list-services{
+    display: flex;
+    justify-content: space-between;
+}
+.services .list-services .item-list-services .title-item-list-services{
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.services .list-services .item-list-services{
+    width: 30%;
+    box-shadow: 0px 0px 10px -4px #000000;
+    text-align: center;
+    padding: 10px;
+}

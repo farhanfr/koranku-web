@@ -1,0 +1,81 @@
+<!-- // Mochamad Farhan Fitrahtur Rachmad -->
+<!-- // TI-2G -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Lokasi Restaurant</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/profile_restaurant.css">
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="kasir_admn.html">Kasir/Admin</a></li>
+			<li><a href="profile_restaurant.html">Profil Rumah Makan</a></li>
+			<li><a href="biodata.html">Biodata</a></li>
+			<li><a href="index.html">Home</a></li>    
+		</ul>
+	</nav>
+	<div id="googleMap" style="width: 100%;height: 400px;"></div>
+
+	<h1 style="text-align: center;">Profile Restaurant</h1>
+
+	<div class="profile-restaurant">
+		<h2>Nama</h2>
+		<p style="font-size: 20px;">ResikRestaurant</p>
+		<h2>Lokasi</h2>
+		<p style="font-size: 20px;">Pulau Lombok</p>
+		<h2>Berdiri Sejak</h2>
+		<p style="font-size: 20px;">2015</p>
+		<h2>Motto</h2>
+		<p style="font-size: 20px;">Kepuasan pelanggan prioritas kami</p>
+	</div>
+
+	<div class="list-services">
+            <div class="item-list-services1">
+            </div>
+            <div class="item-list-services2">      
+            </div>
+            <div class="item-list-services3">
+            </div>
+    </div>
+    <div class="list-services2">
+            <div class="item-list-services1">
+            </div>
+            <div class="item-list-services2">      
+            </div>
+            <div class="item-list-services3">
+            </div>
+     </div>
+
+
+	<script>
+		function initMap() {
+			var lombok = {lat : -8.5830695, lng:116.3202515};
+
+			var map = new google.maps.Map(document.getElementById('googleMap'),{
+				zoom:9,
+				center:lombok
+			});
+
+			var contentString = '<h2>Lokasi Restaurant</h2>';
+
+			var infoWindow = new google.maps.InfoWindow({
+				content: contentString,
+				position: new google.maps.LatLng(-8.4700000,116.3202515),
+			});
+
+			var marker = new google.maps.Marker({
+				position: new google.maps.LatLng(-8.5830695,116.3202515),
+				map: map,
+				animation:google.maps.Animation.BOUNCE
+			})
+
+			infoWindow.open(map);
+		}
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYx8jhm-_vaOZ0mEr5t7i4jnLCCubrNbc&callback=initMap"></script>
+</body>
+</html>
