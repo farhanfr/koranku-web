@@ -12,10 +12,8 @@
 <body>
 	<nav class="navbar">
 		<ul>
-			<li><a href="kasir_admn.html">Kasir/Admin</a></li>
-			<li><a href="profile_restaurant.html">Profil Rumah Makan</a></li>
-			<li><a href="biodata.html">Biodata</a></li>
-			<li><a href="index.html">Home</a></li>    
+			<li><a href="profile_restaurant.php">Profil Rumah Makan</a></li>
+			<li><a href="index.php">Home</a></li>    
 		</ul>
 	</nav>
 	<div id="googleMap" style="width: 100%;height: 400px;"></div>
