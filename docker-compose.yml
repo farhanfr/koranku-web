@@ -1,9 +1,9 @@
 version: '3'
 services:
   web:
-    image: img-static-site-example
+    image: resik-hotel-web-image
     build: .
-    container_name: cobak-gan
+    container_name: resik-hotel-web-container
     restart: always
     ports:
       - "8080:80"
